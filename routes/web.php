@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/calculator', function () {
+    return view('calculatorSearch');
+});
+
+Route::get('/calculator/{name}', 'CalcController@select');
