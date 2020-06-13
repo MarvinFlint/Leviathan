@@ -37,3 +37,25 @@ ul {
   padding: 5px;
 }
 
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.left select,
+.right select {
+  max-width: 200px;
+}
+
+.main {
+  margin-top: 65px;
+  display: flex;
+}
+
+.selected {
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+

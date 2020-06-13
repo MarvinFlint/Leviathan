@@ -21,4 +21,8 @@ Route::get('/calculator', function () {
     return view('calculatorSearch');
 });
 
+Route::get('/debug', function () {
+    return view('debug');
+});
+
 Route::get('/calculator/{name}', 'CalcController@select');
